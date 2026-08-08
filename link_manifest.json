@@ -1,0 +1,38 @@
+{
+  "schema": "release-link-manifest/v1",
+  "section_heading": "Verified Release Links",
+  "section_template": [
+    "<!-- release-links:start -->",
+    "## Verified Release Links",
+    "- Source dataset: [{source_id}]({source_url})",
+    "- Synthesis model: [{model_id}]({model_url})",
+    "<!-- release-links:end -->"
+  ],
+  "announcement_url": "https://raw.githubusercontent.com/toolathlon-jd/release-link-quality-580/main/RELEASE_ANNOUNCEMENT.md",
+  "cards": [
+    {
+      "key": "primary",
+      "dataset_id": "toolathlonEval/toolathlon-link-audit-580-primary",
+      "source_id": "bigcode/the-stack-dedup",
+      "source_url": "https://huggingface.co/datasets/bigcode/the-stack-dedup",
+      "model_id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "model_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "first_pass_values": [
+        "https://huggingface.co/datasets/bigcode/the-stack-dedup",
+        "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct"
+      ]
+    },
+    {
+      "key": "secondary",
+      "dataset_id": "toolathlonEval/toolathlon-link-audit-580-secondary",
+      "source_id": "HuggingFaceH4/ultrachat_200k",
+      "source_url": "https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k",
+      "model_id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "model_url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "first_pass_values": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+        "https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k"
+      ]
+    }
+  ]
+}
